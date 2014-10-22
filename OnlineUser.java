@@ -23,13 +23,13 @@ public class OnlineUser {
 	
 	public OnlineUser(String userName, String user_firstName, String user_lastName, String user_email, String user_password)
 	{
-		setId(this.id);
+		
 		setUsername(this.userName);
 		setFirstName(this.user_firstNamet);
 		setLastName(this.user_lastName);
 		setEmail(this.user_email);
 		setUserPassword(this.user_password);
-		this.user_inactive = user_inactive;
+		
 	}
 	
 	public String toString()
