@@ -12,8 +12,8 @@ public class OnlineUser {
 	
 	public OnlineUser(int id, String userName, String user_firstName, String user_lastName, String user_email, String user_password, Boolean user_inactive)
 	{
-		this.id = id;
-		this.userName = userName;
+		setId(this.id);
+		setUserName(this.userName);
 		this.user_firstName = user_firstName;
 		this.user_lastName = user_lastName;
 		this.user_email = user_email;
@@ -23,12 +23,13 @@ public class OnlineUser {
 	
 	public OnlineUser(String userName, String user_firstName, String user_lastName, String user_email, String user_password)
 	{
-		id = 0;
-		this.userName = userName;
-		this.user_firstName = user_firstName;
-		this.user_lastName = user_lastName;
-		this.user_email = user_email;
-		this.user_password = user_password;
+		setId(this.id);
+		setUsername(this.userName);
+		setFirstName(this.user_firstNamet);
+		setLastName(this.user_lastName);
+		setEmail(this.user_email);
+		setUserPassword(this.user_password);
+		this.user_inactive = user_inactive;
 	}
 	
 	public String toString()
