@@ -13,8 +13,8 @@ public class OnlineForm {
 	
 	public OnlineForm(int id, String courseDept, int courseNumber, String semester, int year, String title)
 	{
-		this.id = id;
-		//this.studentName = studentName;
+		setId(this.id);
+		
 		this.courseDept = courseDept;
 		this.courseNumber = courseNumber;
 		this.semester = semester;
@@ -24,13 +24,13 @@ public class OnlineForm {
 	
 	public OnlineForm(String courseDept, int courseNumber, String semester, int year, String title)
 	{
-		id = 0;
-		//this.studentName = studentName;
-		this.courseDept = courseDept;
-		this.courseNumber = courseNumber;
-		this.semester = semester;
-		this.year = year;
-		this.title = title;
+		
+		
+		setCourseDept(this.courseDept);
+		setCourseNumber(this.courseNumber);
+		setSemester(this.semester);
+		setYear(this.year);
+		setTitle(this.title);
 	}
 	
 	public String toString()
